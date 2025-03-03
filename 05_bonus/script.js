@@ -16,14 +16,11 @@ function pickHour() {
 }
 
 function greetingBasedOnTime (name, hour) {
-    let greeting = "";
+    let greeting = "Buonasera";
     if (hour < 13){
         greeting = "Buongiorno";
     } else if (hour < 17) {
         greeting = "Buon Pomeriggio";
-    }
-    else {
-        greeting = "Buonasera";
     }
     return greeting + " " + name;
 }
