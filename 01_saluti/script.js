@@ -8,13 +8,15 @@ const userName = 'Mario';
 const greeting1 = userName => console.log(`Ciao ${userName}`);
 
 function greeting2 (userName) {
-    return console.log(`Ciao ${userName}`)
+    const hello = "Ciao";
+    return hello + " " + userName;
 }
 
 
 // Invoca la funzione qui e stampa il risultato in console
 
 greeting1(userName);
-greeting2(userName);
+const ciaoMario = greeting2(userName);
+console.log(ciaoMario)
 
 //Risultato atteso se si passa 'Mario': // ciao Mario
